@@ -39,4 +39,14 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 
 ![iam role](CW%20IMGS/EC2%20ROLE.jpg)
 
+STEP 3: CLOUDWATCH AGENT SETUP
+-	From my local machine I SSH’ed into my Ec2 instance using the downloaded key and public address of the instance.
+-	I went ahead to do a complete update to the virtual machine.
+-	Then I installed the Amazon CloudWatch agent which was successful
+-	I modified the configuration file of the CloudWatch agent
 
+![SSH](CW%20IMGS/SSH.jpg)
+
+![AGENT](CW%20IMGS/AGENT%20INSTALL.jpg)
+
+![CONFIG](CW%20IMGS/AGENT%20CONFIG.jpg)
