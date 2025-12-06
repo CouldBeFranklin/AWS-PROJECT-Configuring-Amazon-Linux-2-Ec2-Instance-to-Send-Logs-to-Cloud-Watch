@@ -93,3 +93,20 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 ![LOG APPEARS](CW%20IMGS/LOG%20APPEARS.jpg)
 
 ![LOG OPEN](CW%20IMGS/OPEN%20LOG.jpg)
+
+
+## LESSONS LEARNT
+-	Don’t forget to apply your configuration after modifying it.
+-	Always verify where logs are collected for the AMI you are using because it differs
+-	Evaluate your configuration file very well as any small error can render the whole work to be unsuccessful.
+-	Always restart your agent after applying configuration or after any change.
+-	
+## PROJECT RESULT
+•	Centralized logging successfully enabled
+•	 CloudWatch Agent fully operational
+•	 Real-time log ingestion confirmed
+•	 Security-relevant logs visible in CloudWatch
+•	 Environment ready for alarm creation
+
+
+## ROUGH SHEET OF HOW I NAVIGATED THE PROJECT
