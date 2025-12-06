@@ -81,7 +81,7 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 -	I saved it and applied the configuration to the agent.
 -	I restarted the agent and checked the status
 
-![CONFIG EDIT](CW%20IMGS/NEW%20CONFIG%20EDIT.jpg)
+![CONFIG EDIT](CW%20IMGS/NEW%20COFIG%20EDIT.jpg)
 
 ## STEP 6: LOG INGESTION VALIDATION
 -	Forced a log entry manually
@@ -102,11 +102,16 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 -	Always restart your agent after applying configuration or after any change.
 -	
 ## PROJECT RESULT
-•	Centralized logging successfully enabled
-•	 CloudWatch Agent fully operational
-•	 Real-time log ingestion confirmed
-•	 Security-relevant logs visible in CloudWatch
-•	 Environment ready for alarm creation
+- Centralized logging successfully enabled
+-	CloudWatch Agent fully operational
+-	Real-time log ingestion confirmed
+-	Security-relevant logs visible in CloudWatch
+-	Environment ready for alarm creation
 
 
 ## ROUGH SHEET OF HOW I NAVIGATED THE PROJECT
+
+![ROUGH SHEET](CW%20IMGS/ROUGH%20SHEET.jpg)
+
+**Thank you all for your audience and i am open to any corrections or recommendations
+See yall again in my next project**
