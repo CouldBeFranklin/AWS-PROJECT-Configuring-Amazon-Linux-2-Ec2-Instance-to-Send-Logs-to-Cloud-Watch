@@ -74,3 +74,22 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 -	I also noticed that my retention days was set to -1
 
 ![WRONG PATH](CW%20IMGS/WRONG%20PATH.jpg)
+
+## STEP 4: (SOLUTION): COMPLETE MANUAL MODIFICATION OF THE JSON OF THE AGENT CONFIGURATION
+-	I first checked for the log path for my AMI and found a list and noted it
+-	I navigated to the configuration file and edited it replacing the previous log path with the right one and increasing the retention days to 7
+-	I saved it and applied the configuration to the agent.
+-	I restarted the agent and checked the status
+
+![CONFIG EDIT](CW%20IMGS/NEW%20CONFIG%20EDIT.jpg)
+
+## STEP 6: LOG INGESTION VALIDATION
+-	Forced a log entry manually
+-	Checked CloudWatch console for automatic log group creation and logging
+-	BOOOOOOOM the log group was created and logs were collected and visible for analysis on the CloudWatch console.
+
+![FORCE LOG](CW%20IMGS/FORCE%20LOG.jpg)
+
+![LOG APPEARS](CW%20IMGS/LOG%20APPEARS.jpg)
+
+![LOG APPEARS](CW%20IMGS/LOG%20CONFIRM.jpg)
