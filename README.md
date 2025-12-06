@@ -54,14 +54,23 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 
 ## FIRST ERROR AND TROUBLESHOOT: DIDN’T APPLY THE MODIFIED CONFIG FILE FOR THE AGENT
 -	Was excited and went ahead to check the CloudWatch console to see if the log has been updated but it wasn’t.
+-	Checked the agent status but it was failing to start
 -	Did a little troubleshoot and found out that I only modified the config file but I never applied it to the CloudWatch agent and restart the agent.
+-	And so cloudwatch agent couldn't start with no configuration applied. 
+
+![agent failure](CW%20IMGS/agent%20failure.jpg)
 
 ## STEP 4:(SOLUTION) APPLICATION OF MODIFIED CONFIG FILE AND CLOUDWATCH AGENT RESTART
 -	I went ahead to apply the modified configuration file to the CloudWatch agent.
 -	I restarted the agent and confirmed the agent status.
--	Checked the CloudWatch console to see if the log group has appeared
+-	Checked the CloudWatch console to see if the log group has appeared but No log group was seen
 
 
 ![CONFIG APPLY](CW%20IMGS/APPLY%20CONFIG%20RESTART.jpg)
+![working agent](CW%20IMGS/agent%20working.jpg)
 
+## SECOND ERROR AND TROUBLESHOOT: LOG PATH ERROR
+-	I realized that log path I inputted in the agent configuration (var/log/messages) was the path used by Linux and not Amazon Linux 2 used by my instance.
+-	I also noticed that my retention days was set to -1
 
+![WRONG PATH](CW%20IMGS/WRONG%20PATH.jpg)
