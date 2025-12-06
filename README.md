@@ -5,7 +5,7 @@
 In this project, I created and  configured an Amazon Linux 2 EC2 instance to securely send system and security logs to Amazon CloudWatch.i ran into some errors but I was able to troubleshoot and find the reasons for the errors and solve them.
 
 
-# The practical skills demonstrated in this project:
+## The practical skills demonstrated in this project:
 -	Cloud monitoring
 -	Linux system logging
 -	CloudWatch Agent installation and configuration
@@ -13,21 +13,30 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 -	Security observability
 -	AWS IAM and EC2 operations
 
-# Services and Tools Used
+## Services and Tools Used
 -	Amazon EC2 (Amazon Linux 2)
 -	Amazon CloudWatch
 -	Amazon CloudWatch Agent
 -	AWS Identity and Access Management (IAM)
 
-# Architecture Overview
+## Architecture Overview
 -	An Amazon Linux 2 EC2 instance sends selected system logs to Amazon CloudWatch using the CloudWatch Agent.
 -	IAM Role attached to EC2 allows log publishing.
 -	CloudWatch automatically creates log groups upon first successful ingestion.
 -	Security logs are analyzed using CloudWatch Logs and Metric Filters.
 
-# STEP 1 : EC2 INSTANCE SETUP
+## STEP 1 : EC2 INSTANCE SETUP
 -	I launched an Ec2 instance named “EC2WATCH” in us east region in a default VPC
 -	I created a security group for the instance with an inbound rule allowing SSH on port 22 from any ipv4 address (just for testing purpose)
 
 
 ![ec2](CW%20IMGS/EC2%20CREATE.jpg)
+
+## STEP 2 : IAM SETUP
+-	The Ec2 instance needed permission to be able to publish logs to cloudwatch and so needed a role with the appropriate policy ensuring least privilege attached to it
+-	I created a role named “EC2WATCHROLE” and attached the “CloudWatchAgentServerPolicy” policy to it.
+-	Finally, I attached the role to Ec2instance
+
+![iam role](CW%20IMGS/EC2%20ROLE.jpg)
+
+
