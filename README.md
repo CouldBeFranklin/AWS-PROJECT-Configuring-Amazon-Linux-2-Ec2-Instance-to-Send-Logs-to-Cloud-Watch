@@ -100,7 +100,8 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 -	Always verify where logs are collected for the AMI you are using because it differs
 -	Evaluate your configuration file very well as any small error can render the whole work to be unsuccessful.
 -	Always restart your agent after applying configuration or after any change.
--	
+
+
 ## PROJECT RESULT
 - Centralized logging successfully enabled
 -	CloudWatch Agent fully operational
