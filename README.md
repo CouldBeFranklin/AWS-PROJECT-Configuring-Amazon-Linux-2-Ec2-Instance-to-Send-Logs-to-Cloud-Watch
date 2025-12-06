@@ -39,7 +39,7 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 
 ![iam role](CW%20IMGS/EC2%20ROLE.jpg)
 
-STEP 3: CLOUDWATCH AGENT SETUP
+## STEP 3: CLOUDWATCH AGENT SETUP
 -	From my local machine I SSH’ed into my Ec2 instance using the downloaded key and public address of the instance.
 -	I went ahead to do a complete update to the virtual machine.
 -	Then I installed the Amazon CloudWatch agent which was successful
@@ -50,3 +50,18 @@ STEP 3: CLOUDWATCH AGENT SETUP
 ![AGENT](CW%20IMGS/AGENT%20INSTALL.jpg)
 
 ![CONFIG](CW%20IMGS/AGENT%20CONFIG.jpg)
+
+
+## FIRST ERROR AND TROUBLESHOOT: DIDN’T APPLY THE MODIFIED CONFIG FILE FOR THE AGENT
+-	Was excited and went ahead to check the CloudWatch console to see if the log has been updated but it wasn’t.
+-	Did a little troubleshoot and found out that I only modified the config file but I never applied it to the CloudWatch agent and restart the agent.
+
+## STEP 4:(SOLUTION) APPLICATION OF MODIFIED CONFIG FILE AND CLOUDWATCH AGENT RESTART
+-	I went ahead to apply the modified configuration file to the CloudWatch agent.
+-	I restarted the agent and confirmed the agent status.
+-	Checked the CloudWatch console to see if the log group has appeared
+
+
+![CONFIG APPLY](CW%20IMGS/APPLY%20CONFIG%20RESTART.jpg)
+
+
