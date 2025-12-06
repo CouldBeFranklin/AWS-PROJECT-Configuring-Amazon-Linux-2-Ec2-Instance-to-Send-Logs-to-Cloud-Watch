@@ -92,4 +92,4 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 
 ![LOG APPEARS](CW%20IMGS/LOG%20APPEARS.jpg)
 
-![LOG APPEARS](CW%20IMGS/LOG%20CONFIRM.jpg)
+![LOG OPEN](CW%20IMGS/OPEN%20LOG.jpg)
