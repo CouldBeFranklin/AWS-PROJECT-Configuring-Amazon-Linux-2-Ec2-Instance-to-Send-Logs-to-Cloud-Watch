@@ -1,0 +1,2 @@
+# AWS-PROJECT-Configuring-Amazon-Linux-2-Ec2-Instance-to-Send-Logs-to-Cloud-Watch
+LOG COLLECTION AND MONITORING PROJECT ON AWS CLOUD SECURITY
