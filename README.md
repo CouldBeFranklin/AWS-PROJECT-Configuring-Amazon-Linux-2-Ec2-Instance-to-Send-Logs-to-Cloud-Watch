@@ -29,6 +29,5 @@ In this project, I created and  configured an Amazon Linux 2 EC2 instance to sec
 -	I launched an Ec2 instance named “EC2WATCH” in us east region in a default VPC
 -	I created a security group for the instance with an inbound rule allowing SSH on port 22 from any ipv4 address (just for testing purpose)
 
-![EC2 LAUNCH](https://github.com/CouldBeFranklin/AWS-PROJECT-Configuring-Amazon-Linux-2-Ec2-Instance-to-Send-Logs-to-Cloud-Watch/blob/06ff711fa9f97e0b88d2d3d9b8ff817c91888539/CW%20IMGS/EC2%20CREATE.jpg)
 
-![ec2](CW IMGS/EC2 CREATE.jpg)
+![ec2](CW%20IMGS/EC2%20CREATE.jpg)
