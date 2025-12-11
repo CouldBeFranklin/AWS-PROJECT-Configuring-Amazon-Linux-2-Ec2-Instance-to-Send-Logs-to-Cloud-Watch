@@ -1,4 +1,4 @@
-#  <p align="center">AWS-PROJECT-Configuring-Amazon-Linux-2-Ec2-Instance-to-Send-Logs-to-Cloud-Watch
+#  <p align="center">AWS PROJECT - Configuring Amazon Linux 2 Ec2 Instance to Send Logs to CloudWatch
 
 
 
